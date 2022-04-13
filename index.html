@@ -497,10 +497,11 @@
       </svg>
     </a>
     <form class="speaker-form" method="POST" autocomplete="off">
-      <h2 class="group-title">
+      <p class="group-title">
         Оставьте свои данные, мы вам перезвоним
-      </h2>
+      </p>
       <div class="form-field">
+        <!-- На всякий случай в label нельзя вкладывать div, div можно заменить на span!!  -->
         <label for="name">Имя</label>
         <div class="input-svg">
           <input
@@ -521,6 +522,7 @@
       <div class="form-field">
         <label for="tel">Телефон</label>
         <div class="input-svg">
+          <!-- Позиционировать иконки можно только относительно парных тегов!! Инпут одинарный тег -->
           <input
             type="tel"
             name="tel"
@@ -562,9 +564,9 @@
             type="checkbox"
             name="topic"
             value="checkbox"
-          />
+           required/>
           <span class="checkbox-icon"></span>
-          Соглашаюсь с рассылкой и принимаю
+          Соглашаюсь с рассылкой и принимаю&nbsp;
           <a href="" class="contract">Условия договора</a>
         </label>
 
